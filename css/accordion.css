@@ -1,28 +1,28 @@
-.example1 .accordion__item {
+.example1 .accordion__item, .example2 .accordion__item {
   position: relative;
   width: 100%;
   height: auto;
 }
 
-.example1 .accordion__item.active i:before {
+.example1 .accordion__item.active i:before, .example2 .accordion__item.active i:before {
   opacity: 0;
   visibility: hidden;
 }
 
-.example1 .accordion__content {
+.example1 .accordion__content, .example2 .accordion__content {
   display: none;
   padding: 24px 0 16px 0;
 }
 
-.example1 .accordion__content p {
+.example1 .accordion__content p, .example2 .accordion__content p {
   margin-bottom: 16px;
 }
 
-.example1 .accordion__content p:last-child {
+.example1 .accordion__content p:last-child, .example2 .accordion__content p:last-child {
   margin-bottom: 0;
 }
 
-.example1 .accordion__button {
+.example1 .accordion__button, .example2 .accordion__button {
   display: block;
   padding: 14px 0 14px 0;
   text-decoration: none;
@@ -41,7 +41,7 @@
           box-shadow: inset 0px -2px 0px rgba(189, 189, 189, 0.5);
 }
 
-.example1 .accordion__button i {
+.example1 .accordion__button i, .example2 .accordion__button i {
   min-width: 30px;
   min-height: 30px;
   max-width: 30px;
@@ -52,7 +52,7 @@
   margin-left: 10px;
 }
 
-.example1 .accordion__button i:before, .example1 .accordion__button i:after {
+.example1 .accordion__button i:before, .example1 .accordion__button i:after, .example2 .accordion__button i:before, .example2 .accordion__button i:after {
   content: '';
   width: 18px;
   height: 3px;
@@ -68,7 +68,7 @@
           transform: rotate(90deg);
 }
 
-.example1 .accordion__button i:after {
+.example1 .accordion__button i:after, .example2 .accordion__button i:after {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);

@@ -8,7 +8,14 @@
     <title>UI-KIT Home</title>
   </head>
   <body>
-    <header class="header main-header">
+   <!-- https://getuikit.com/docs -->
+    <header class="uk-header">
+      <div class="uk-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <a href="index.html" class="header__logo">UIkit</a>
       <a href="https://github.com/RomanR301/UI-KIT" target="_blank" class="header__github">
         <img src="./img/icons/icon-github.svg" alt="github">
@@ -19,13 +26,17 @@
     </header>
     <main>
       <section>
-        <!-- https://getuikit.com/docs -->
         <div class="uk-menu">
+          <div class="uk-hamburger"><span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <ul>
             <li>
-              <h1>
+              <h2>
                 Documentation
-              </h1>
+              </h2>
             </li>
             <li>
               <a href="./components/accordion/accordion.html">Accordion</a>
@@ -133,4 +144,6 @@
       </section>
     </main>
   </body>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </html>
