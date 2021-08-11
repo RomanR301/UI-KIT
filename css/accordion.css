@@ -1,0 +1,76 @@
+.example1 .accordion__item {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.example1 .accordion__item.active i:before {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.example1 .accordion__content {
+  display: none;
+  padding: 24px 0 16px 0;
+}
+
+.example1 .accordion__content p {
+  margin-bottom: 16px;
+}
+
+.example1 .accordion__content p:last-child {
+  margin-bottom: 0;
+}
+
+.example1 .accordion__button {
+  display: block;
+  padding: 14px 0 14px 0;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: inset 0px -2px 0px rgba(189, 189, 189, 0.5);
+          box-shadow: inset 0px -2px 0px rgba(189, 189, 189, 0.5);
+}
+
+.example1 .accordion__button i {
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  border-radius: 100px;
+  position: relative;
+  display: block;
+  margin-left: 10px;
+}
+
+.example1 .accordion__button i:before, .example1 .accordion__button i:after {
+  content: '';
+  width: 18px;
+  height: 3px;
+  position: absolute;
+  left: calc(50% - 9px);
+  top: calc(50% - 1px);
+  background: #333333;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.example1 .accordion__button i:after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=accordion.css.map */
